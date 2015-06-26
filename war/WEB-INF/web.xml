@@ -12,7 +12,39 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Matricula</servlet-name>
 		<url-pattern>/matricula</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>RelacionAlumnos</servlet-name>
+		<servlet-class>unsa.edu.RelacionAlumnos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RelacionAlumnos</servlet-name>
+		<url-pattern>/relacionAlumnos</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RegistroAlumnos</servlet-name>
+		<servlet-class>unsa.edu.RegistroAlumnos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistroAlumnos</servlet-name>
+		<url-pattern>/registroAlumnos</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>EliminarAlumnos</servlet-name>
+		<servlet-class>unsa.edu.EliminarAlumnos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EliminarAlumnos</servlet-name>
+		<url-pattern>/eliminarAlumnos</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ModificarNombre</servlet-name>
+		<servlet-class>unsa.edu.ModificarNombre</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarNombre</servlet-name>
+		<url-pattern>/modificarNombre</url-pattern>
+	</servlet-mapping>
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>registroAlumnos.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>
